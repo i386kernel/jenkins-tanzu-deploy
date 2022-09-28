@@ -2,7 +2,7 @@ pipeline {
     agent any
     stages {
     // Test Tanzu
-       stage("Test Tanzu"){
+       stage("Create Tanzu Workload Cluster"){
        agent {
             label 'tanzu-mgmt'
        }
