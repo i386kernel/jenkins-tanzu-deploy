@@ -1,4 +1,5 @@
 pipeline {
+    agent any
     stages {
     // Test Tanzu
        stage("Test Tanzu"){
