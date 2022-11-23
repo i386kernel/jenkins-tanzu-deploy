@@ -8,7 +8,7 @@ pipeline {
        }
        steps{
             sh 'tanzu cluster list --include-management-cluster'
-            sh 'tanzu cluster create -f wk-dev-01.yml'
+            sh 'tanzu cluster create -f wk-dev-01.yml -v9'
            }
        }
     }
