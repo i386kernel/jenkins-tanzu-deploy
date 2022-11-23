@@ -9,6 +9,7 @@ pipeline {
        steps{
             sh 'tanzu cluster list --include-management-cluster'
             sh 'tanzu cluster create -f wk-dev-01.yml -v9'
+            sh 'tanzu cluster kubeconfig get --admin dev-cluster'
            }
        }
     }
